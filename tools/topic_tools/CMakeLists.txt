@@ -49,6 +49,9 @@ add_dependencies(topic_tools ${${PROJECT_NAME}_EXPORTED_TARGETS})
 add_executable(relay src/relay.cpp)
 target_link_libraries(relay topic_tools ${catkin_LIBRARIES})
 
+add_executable(delay src/delay.cpp)
+target_link_libraries(delay topic_tools ${catkin_LIBRARIES})
+
 add_executable(drop src/drop.cpp)
 target_link_libraries(drop topic_tools ${catkin_LIBRARIES})
 
